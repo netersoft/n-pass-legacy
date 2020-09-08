@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.second.AddAccountActivity">
+
+    <ScrollView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/whitesmoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/account_name"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:layout_margin="@dimen/activity_horizontal_margin"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/account_name"
+                        tools:ignore="Autofill" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/account_username"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/account_username"
+                    tools:ignore="Autofill" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/account_mail"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/account_mail"
+                    tools:ignore="Autofill" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/account_mdp"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            android:background="@android:color/transparent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/account_mdp"
+                            tools:ignore="Autofill" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/generate_mdp"
+                    android:text="@string/gen_but"
+                    android:background="@color/whitesmoke"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/show_account_types"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/show_account_types_txt"
+                    android:text="@string/account_type"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorPrimary"
+                    android:drawableRight="@mipmap/ic_expand_less_black_18dp"
+                    android:drawableEnd="@mipmap/ic_expand_less_black_18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/account_types"
+                android:visibility="gone"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/facebook"
+                        android:id="@+id/facebook" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/google"
+                        android:id="@+id/google" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/instagram"
+                        android:id="@+id/instagram" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:id="@+id/email" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/linkedin"
+                        android:id="@+id/linkedin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/twitter"
+                        android:id="@+id/twitter" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whatsapp"
+                        android:id="@+id/whatsapp" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/telegram"
+                        android:id="@+id/telegram" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/youtube"
+                        android:id="@+id/youtube" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        app:buttonTint="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other"
+                        android:id="@+id/other_types" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/account_notes"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="@string/account_notes"
+                    tools:ignore="Autofill" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:text="@string/add"
+                    android:id="@+id/account_add"
+                    android:background="@drawable/blue_button_bg_stroke"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

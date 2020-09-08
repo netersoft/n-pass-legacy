@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/old_mdp"
+            android:ems="10"
+            android:hint="@string/old_mdp"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="Autofill" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/new_mdp"
+            android:ems="10"
+            android:hint="@string/new_mdp"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="Autofill" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/confirm_new_mdp"
+            android:ems="10"
+            android:hint="@string/confirm_new_mdp"
+            android:inputType="textPassword"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="Autofill" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

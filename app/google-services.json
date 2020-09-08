@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "672656620653",
+    "firebase_url": "https://n-pass.firebaseio.com",
+    "project_id": "n-pass",
+    "storage_bucket": "n-pass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672656620653:android:d20f131c0612fa22",
+        "android_client_info": {
+          "package_name": "com.neteru.n_pass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672656620653-k6o6joa7dpqidls9h51j9u5els3raujl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neteru.n_pass",
+            "certificate_hash": "76fe5eae7c2fa40a83be13e2fe46abb476cedb85"
+          }
+        },
+        {
+          "client_id": "672656620653-l5ir5h7urukm5fo6frlutd2pikqhd6oa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neteru.n_pass",
+            "certificate_hash": "93f20a50c2a5bab6b86dcbdaa79b3af2bdd27f16"
+          }
+        },
+        {
+          "client_id": "672656620653-dck8i8s39486lfaa6o2jb4ltiaqvopmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtzTfd1-XPsbZYovHB9WwyEpR9cLmGiWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672656620653-dck8i8s39486lfaa6o2jb4ltiaqvopmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

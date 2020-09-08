@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/general">
+
+        <com.neteru.n_pass.classes.CustomPreferenceDialogForMdp
+            android:key="mdp"
+            android:dialogLayout="@layout/mdp_modify_layout"
+            android:title="@string/mdp_portal_title"
+            android:summary="@string/mdp_portal_summary"/>
+
+        <EditTextPreference
+            android:title="@string/mail_modify_title"
+            android:key="mail"
+            android:inputType="textEmailAddress"
+            android:hint="@string/mail"
+            android:summary="@string/mail_modify_summary"/>
+
+        <SwitchPreference
+            android:title="@string/secure_notif_title"
+            android:summary="@string/secure_notif_summary"
+            android:defaultValue="true"
+            android:key="secureNotif"/>
+
+        <SwitchPreference
+            android:title="@string/hide_mdp_title"
+            android:summary="@string/hide_mdp_summary"
+            android:defaultValue="false"
+            android:key="hidePassword"/>
+
+        <!--<ListPreference
+            android:title="@string/lock_time_title"
+            android:summary="@string/lock_time_summary"
+            android:key="period"
+            android:defaultValue="0"
+            android:entries="@array/periodArray"
+            android:entryValues="@array/periodValues" />-->
+
+        <ListPreference
+            android:title="@string/restore_option_title"
+            android:summary="@string/restore_option_summary"
+            android:key="restaurationOption"
+            android:defaultValue="0"
+            android:entries="@array/restaurationArray"
+            android:entryValues="@array/restaurationValues" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/view">
+
+        <SwitchPreference
+            android:title="@string/floatting_but_title"
+            android:summary="@string/floatting_but_summary"
+            android:defaultValue="true"
+            android:key="floattingBut"/>
+
+        <SwitchPreference
+            android:title="@string/deleting_but_title"
+            android:summary="@string/deleting_but_summary"
+            android:defaultValue="true"
+            android:key="deleteBut"/>
+
+        <SwitchPreference
+            android:title="@string/swiping_title"
+            android:summary="@string/swiping_summary"
+            android:defaultValue="true"
+            android:key="swipingAct"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/mdp_gen_title">
+
+        <CheckBoxPreference
+            android:title="@string/uppercase"
+            android:defaultValue="true"
+            android:summary="@string/uppercase_summary"
+            android:key="gen_majuscules" />
+
+        <CheckBoxPreference
+            android:title="@string/lowercase"
+            android:defaultValue="true"
+            android:summary="@string/lowercase_summary"
+            android:key="gen_minuscules" />
+
+        <CheckBoxPreference
+            android:title="@string/numbers"
+            android:defaultValue="true"
+            android:summary="@string/numbers_summary"
+            android:key="gen_chiffres" />
+
+        <CheckBoxPreference
+            android:title="@string/symbols"
+            android:defaultValue="false"
+            android:summary="@string/symbols_summary"
+            android:key="gen_symboles" />
+
+        <EditTextPreference
+            android:title="@string/mdp_length"
+            android:key="gen_length"
+            android:inputType="number"
+            android:defaultValue="9"
+            android:hint="Min = 3 / Max = 21"
+            android:summary="@string/mdp_length_summary"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="@string/info">
+
+        <Preference
+            android:key="privacy_policy"
+            android:title="@string/privacy_policy"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
